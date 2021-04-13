@@ -1,6 +1,98 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="vertical" android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:padding="10dp"
+    android:background="@color/white"
+    tools:context=".SignUpActivity">
+
+
+    <TextView
+        android:id="@+id/calculatorTxtId"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textSize="30sp"
+        android:textColor="@color/black"
+        android:text="LOGIN ACTIVITY" />
+
+
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:stretchColumns="*">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:text="Username:"
+                android:textSize="16sp"
+                android:layout_margin="5dp"
+                android:textColor="@color/black"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <EditText
+                android:id="@+id/usrNameId"
+                android:textSize="14sp"
+                android:maxLines="1"
+                android:inputType="text"
+                android:textColor="@color/black"
+                android:background="@drawable/sel_rounded_edittext"
+                android:layout_margin="5dp"
+                android:padding="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:text="Password:"
+                android:layout_margin="5dp"
+                android:textSize="16sp"
+                android:textColor="@color/black"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <EditText
+                android:id="@+id/pwdId"
+                android:textSize="14sp"
+                android:maxLines="1"
+                android:padding="5dp"
+                android:background="@drawable/sel_rounded_edittext"
+                android:textColor="@color/black"
+                android:layout_margin="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+        </TableRow>
+
+    </TableLayout>
+
+    <Button
+        android:id="@+id/loginId"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:layout_marginTop="10dp"
+        android:focusableInTouchMode="false"
+        android:clickable="false"
+        android:maxLines="1"
+        android:padding="5dp"
+        android:text="LOGIN"
+        android:textColor="@color/white"
+        android:textColorHint="@color/black"/>
 
 </LinearLayout>

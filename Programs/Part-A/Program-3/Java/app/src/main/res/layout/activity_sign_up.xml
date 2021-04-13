@@ -68,7 +68,6 @@
 
             <EditText
                 android:id="@+id/pwdId"
-                android:inputType="textPassword"
                 android:textSize="14sp"
                 android:maxLines="1"
                 android:padding="5dp"
