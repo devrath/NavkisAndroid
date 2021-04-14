@@ -16,7 +16,7 @@ import java.text.BreakIterator;
 import java.util.Locale;
 
 public class MainActivity extends AppCompatActivity {
-    
+
     private Chronometer chronometer;
     private Button startId,stopId;
 
